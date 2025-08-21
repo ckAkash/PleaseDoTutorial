@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		B288C8342E56EF4E0094B0C8 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B288C8332E56EF460094B0C8 /* .gitignore */; };
+		B288C8412E56F1960094B0C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B288C8392E56F1960094B0C8 /* ContentView.swift */; };
+		B288C8422E56F1960094B0C8 /* PleaseDoTutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B288C83A2E56F1960094B0C8 /* PleaseDoTutorialApp.swift */; };
+		B288C8432E56F1960094B0C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B288C83F2E56F1960094B0C8 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +35,12 @@
 		B288C8162E56EEF70094B0C8 /* PleaseDoTutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PleaseDoTutorialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B288C8202E56EEF70094B0C8 /* PleaseDoTutorialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PleaseDoTutorialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B288C8332E56EF460094B0C8 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		B288C8392E56F1960094B0C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B288C83A2E56F1960094B0C8 /* PleaseDoTutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PleaseDoTutorialApp.swift; sourceTree = "<group>"; };
+		B288C83F2E56F1960094B0C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		B288C80B2E56EEF60094B0C8 /* PleaseDoTutorial */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = PleaseDoTutorial;
-			sourceTree = "<group>";
-		};
 		B288C8192E56EEF70094B0C8 /* PleaseDoTutorialTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = PleaseDoTutorialTests;
@@ -80,8 +81,8 @@
 		B288C8002E56EEF60094B0C8 = {
 			isa = PBXGroup;
 			children = (
+				B288C8402E56F1960094B0C8 /* PleaseDoTutorial */,
 				B288C8332E56EF460094B0C8 /* .gitignore */,
-				B288C80B2E56EEF60094B0C8 /* PleaseDoTutorial */,
 				B288C8192E56EEF70094B0C8 /* PleaseDoTutorialTests */,
 				B288C8232E56EEF70094B0C8 /* PleaseDoTutorialUITests */,
 				B288C80A2E56EEF60094B0C8 /* Products */,
@@ -98,6 +99,48 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		B288C83B2E56F1960094B0C8 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B288C8392E56F1960094B0C8 /* ContentView.swift */,
+				B288C83A2E56F1960094B0C8 /* PleaseDoTutorialApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B288C83C2E56F1960094B0C8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B288C83D2E56F1960094B0C8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B288C83E2E56F1960094B0C8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B288C8402E56F1960094B0C8 /* PleaseDoTutorial */ = {
+			isa = PBXGroup;
+			children = (
+				B288C83B2E56F1960094B0C8 /* App */,
+				B288C83C2E56F1960094B0C8 /* Models */,
+				B288C83E2E56F1960094B0C8 /* Views */,
+				B288C83D2E56F1960094B0C8 /* ViewModels */,
+				B288C83F2E56F1960094B0C8 /* Assets.xcassets */,
+			);
+			path = PleaseDoTutorial;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,9 +155,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				B288C80B2E56EEF60094B0C8 /* PleaseDoTutorial */,
 			);
 			name = PleaseDoTutorial;
 			packageProductDependencies = (
@@ -218,6 +258,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B288C8432E56F1960094B0C8 /* Assets.xcassets in Resources */,
 				B288C8342E56EF4E0094B0C8 /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,6 +284,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B288C8412E56F1960094B0C8 /* ContentView.swift in Sources */,
+				B288C8422E56F1960094B0C8 /* PleaseDoTutorialApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
